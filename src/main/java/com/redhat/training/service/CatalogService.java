@@ -91,6 +91,8 @@ public class CatalogService {
 			@SuppressWarnings("unchecked")
 			List<CatalogItem> items = (List<CatalogItem>) fquery
 					.getResultList();
+			List<CatalogItem> badDataStructure = new ArrayList<CatalogItem>();
+			items = badDataStructure;
 			return items;
 		} catch (ParseException e) {
 			System.out.println(e);
